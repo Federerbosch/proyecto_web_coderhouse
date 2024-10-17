@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -14,35 +15,36 @@ body{
     font-size: 10px;
 }
 
+/*--Inicio de pagina principal--*/
 
 /*--Barra de navegacion--*/
+.navbar{
+    background-color: #4f772d;
+    border-bottom: 1px solid #b9b9b9;
+}
 
-.nav__container{
-    background-color: #444;
+.name-logo{
+    font-family: "Geologica", sans-serif !important; 
+    font-weight: 800 !important;  
+    color: #90a955 !important;
+    font-size: 1.5em !important;     
+    background-color: #ECF39E;
+    border-radius: 50px;  
     padding: 10px;
-    font-size: 1em;
-    border-bottom: 1px solid #fff;
 }
-.container__nav--list{
-    color: white;
-    
+
+.name-link{
+    font-family: "Geologica", sans-serif !important; 
+    font-weight: 700 !important;  
+    color: #90a955 !important; 
+    margin: 0 5px;
+    padding: 8px !important;
+    transition: background-color 0.2s ease ;
 }
-.nav__logo a{
-    margin: 5px;
-    display: inline-block;
-}
-.nav__list--enlace{
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-}
-.nav--list{
-    list-style: none;
-}
-.nav__list--desordenada{
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 10px;
+
+.name-link:hover{
+    background-color: #ECF39E;
+    border-radius: 50px;    
 }
 
 /*--Heeader--*/
@@ -58,24 +60,29 @@ body{
 }
 .header__container{
     position: relative;
-    z-index: 2;
+    z-index: 10;
     margin: auto;
     text-align: center;
-    max-width: 700px;
+    max-width: 900px;
+
 
 }
 .header__img{
-    min-width: 100px;
-    max-width: 60%;
+    min-width: 150px;
+    max-width: 35%;
 }
 .header__title{
-    color: #f8f8f8;
+    color: #ECF39E;
     font-size: 4em;
+    font-weight: 600;
+    font-family: "Geologica", sans-serif;
 }
 .header__text{
     text-wrap: pretty;
-    color: #f8f8f8;
+    color: #ECF39E;
     font-size: 1.7em;
+    font-family: "Geologica", sans-serif;
+    font-weight: 300;
     line-height: 1.5;
 }
 
@@ -237,8 +244,11 @@ body{
     font-size: 15px;
 }
 
+/*--fin de pagina principal--*/
+
 /* Pagina responsive para tablet */
 @media screen and (max-width:800px) {
+    
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1,1fr);
@@ -261,10 +271,10 @@ body{
         display: none;
     }
     .header__title{
-        font-size: 2.7em;
+        font-size: 2em;
     }
     .header__text{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .main__section--title{
         font-size: 2em;
