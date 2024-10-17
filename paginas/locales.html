@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+    <script src="https://kit.fontawesome.com/ce55077fee.js" crossorigin="anonymous"></script>
+</head>
+<body class="local">
+
+    <!--Barra de navegacion-->
+   <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Amatear</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html" data-bs-toggle="tooltip" title="Click para volver al Home">Home</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="tooltip" title="Click para ir a la pagina 1">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="tooltip" title="Click para ir a la pagina 2">
+              <a class="nav-link" href="locales.html">local</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="tooltip" title="Click para ir a la pagina 3">
+              <a class="nav-link" href="ayuda.html">Ayuda</a>
+            </li>
+            <li class="nav-item" data-bs-toggle="tooltip" title="Click para ir a la pagina 4">
+              <a class="nav-link" href="como-comprar.html">Como comprar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+      <!-- header -->
+    <header class="header--local">
+        <img class="w-100 col-12" style="max-height: 35vh; margin-top: 60px;" src="../imagenes/mate__paisaje1.jpg" alt="">
+    </header>
+    <div class="ubicacion">
+        <aside class="ubicacion-navbar bg-dark">
+            <h2 class="ubicacion__title--ancho text-center ">UBICACION</h2>
+            <h3 class="ubicacion__subtitle text-center">(CORRIENTES CAPITAL)</h3>
+            <div class=" list-group d-flex flex-column gap-2">
+                <button class="btn--tamaño btn btn-success btn-lg" onclick="updateMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0618548176344!2d-58.84172952366975!3d-27.467333616606986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca4c0a87e1f%3A0xe561f311c476b524!2sSalta%20%26%20Junin%2C%20W3400%20Corrientes!5e0!3m2!1ses-419!2sar!4v1727402877326!5m2!1ses-419!2sar')">Junin y Salta</button>
+
+                
+              <button class="btn--tamaño btn btn-success btn-lg" onclick="updateMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.041255520378!2d-58.837956712525894!3d-27.467974955563978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ca1385d13b5%3A0x2d95525b96800ba1!2sJunin%20%26%20Catamarca%2C%20W3400%20Corrientes!5e0!3m2!1ses-419!2sar!4v1727403051790!5m2!1ses-419!2sar')">Junin y Catamarca</button>
+            
+              <button class="btn--tamaño btn btn-success btn-lg mb-2" onclick="updateMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.411641426661!2d-58.80199162366918!3d-27.487570717469588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ba72641b625%3A0x164df78d70157dfc!2sMedrano%20%26%20Avenida%20Regimiento%20Cazadores%20Correntinos%2C%20W3400%20Corrientes!5e0!3m2!1ses-419!2sar!4v1727403205550!5m2!1ses-419!2sar')">Medrano y Cazadores</button>    
+            </div>
+        </aside>
+    <!-- Mapa de Google Maps -->
+    <main class="mapa">
+        <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0135965807565!2d144.9631!3d-37.8141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xa4f527ba0e1f4b0!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1638460514169!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </main>
+    </div>
+    
+    <!-- FOOTER DE PAGINA -->
+    <footer class="pie-pagina bg-dark">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="#">
+                      <img src="../imagenes/logo yuyo.png" alt="">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>Politicas</h2>
+              <a href="paginas/contacto.html">Contacto</a>
+              <a href="paginas/locales.html">Local</a>
+              <a href="paginas/ayuda.html">Ayuda</a>
+              <a href="paginas/como-comprar.html">Como comprar</a>
+          </div>
+          <div class="box">
+              <h2>Siguenos</h2>
+              <div class="red-social">
+                  <a href="https://www.facebook.com/profile.php?id=61556530991657" class="fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/amatear_2024/?next=%2F" class="fa fa-instagram"></a>
+                  <a href="https://wa.me/543794133213" class="fa fa-whatsapp"></a>
+                  <a href="#"></a>
+              </div>
+          </div>
+      </div>
+      <div class="grupo-2 bg-dark">
+          <small>&copy; 2024  -  Todos los derechos reservado</small>
+      </div>
+  </footer>
+    
+
+
+    <script>
+        function updateMap(url) {
+          var iframe = document.getElementById("mapIframe");
+          iframe.src = url;
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+</html>
