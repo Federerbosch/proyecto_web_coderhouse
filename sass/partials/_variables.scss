@@ -1,0 +1,29 @@
+/*FUENTES DE TIPOGRAFIA*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@352,1&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+//paleta de colores
+$verde_claro:#90a955;
+$verde_intermedio:#4f772d;
+$verde_oscuro: #132a13;
+$amarillo:#ECF39E;
+$gris: #b9b9b9;
+$blanco: #fff;
+$negro: #111;
+
+//tipografias
+$geologica: "Geologica", sans-serif;
+$bodoni: "Libre Bodoni", serif;
+
+
+
+
+@mixin flex($direccion,$justify,$align){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+

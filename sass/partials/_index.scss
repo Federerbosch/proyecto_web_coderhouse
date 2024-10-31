@@ -1,0 +1,162 @@
+/*--Heeader--*/
+.header{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("../imagenes/pasiaje_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .header__container{
+        position: relative;
+        z-index: 10;
+        margin: auto;
+        text-align: center;
+        max-width: 800px;
+        .header__img{
+            min-width: 150px;
+            max-width: 35%;
+        }
+        .header__title{
+            color: $amarillo;
+            font-size: 4.8em;
+            font-weight: 600;
+            font-family: $geologica;
+        }
+        .header__text{
+            text-wrap: pretty;
+            color: $amarillo;
+            font-size: 2em;
+            font-family: $geologica;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+    }
+}
+    .rotate-scale-up-ver{
+    -webkit-animation: rotate-scale-up-ver 0.65s linear both;
+            animation: rotate-scale-up-ver 0.65s linear both;
+    }
+    @keyframes rotate-scale-up-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateY(180deg);
+              transform: scale(2) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+
+/*------PRIMERA SECCION------*/
+.main__section--flex{
+    @include flex(column,center,center);
+    height: 80vh;
+    align-items: stretch;
+    .main__section--title{
+        font-family: $bodoni;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: $verde_claro;
+        font-size: 3em;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .main__section--container{
+        position: relative;
+        max-width: 100%;
+        @include flex(row, space-around, center);
+        padding: 20px 10px;
+        margin: 0;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+        .main__section--child{
+            min-width: 300px;
+            max-width: 400px;
+            flex-grow: 1;
+            font-family: $geologica;
+            @include flex(column,center,center);
+            .child__img{
+                display: inline-block;
+                position: relative;
+                max-width: 350px;
+            } 
+            .child__title{
+                padding: 0;
+                margin: 0;
+                font-size: 1.8em;
+                font-family: $geologica;
+                font-weight: 300;
+                color: $verde_oscuro;
+                text-align: center;
+            }   
+        }
+    }
+
+    /*--SEGUNDA SECCION-- */
+.secondary__section{
+    text-align: center;
+    text-wrap: balance;
+    background-image: radial-gradient(circle farthest-side at center, hsla(64, 77%, 78%, 0.76) 40%, hsl(92, 45%, 32%) 100%);
+    padding: 20px;
+    @include flex(column, center, center);
+    height: 80vh;
+    .secondary__section--title{
+        font-size: 3.5em;
+        color: $verde_oscuro;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-family: $bodoni;
+    }
+    .secondary__section--text{
+        font-size: 1.8em;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $verde_oscuro;
+        line-height: 1.5;
+        max-width: 600px;
+        font-family: $geologica;
+        
+    }
+}
+
+
+/* -- TERCERA SECCION CONTENIDO DE TARJETAS-- */
+.productos-title{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    font-family: $bodoni;
+    color: $verde_intermedio;
+}
+.container__cards{
+    position: relative;
+    max-width: 100%;
+    @include flex(row, space-around,center);
+    padding: 20px 10px;
+    margin: 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-bottom: 10px;
+    overflow: hidden;
+    .cards__items{
+        .cards__items img{
+            box-sizing: border-box;
+            max-width: 300px;
+            border-radius: 20px;
+        }
+    }
+    
+
+}
+/*FIN DE PAGINA PRINCIPAL*/

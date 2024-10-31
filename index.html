@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amatear</title>
-    <link rel="stylesheet" href="estilos/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ce55077fee.js" crossorigin="anonymous"></script>
+
+    <!-- animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- css nuevo -->
+    <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
   
     <!--Barra de navegacion-->
-    <div class="container-fluid">
+    <div class="container-nav container-fluid">
         <nav class="navbar navbar-expand-lg border-body fixed-top" data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="name-logo navbar-brand" href="index.html">Amatear</a>
+            <a class="name-logo navbar-brand" href="./index.html">Amatear</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -45,9 +50,9 @@
 
       <!--Header Principal-->
     <header class="header">
-        <div class="header__container">
-            <img class="header__img" src="../imagenes/logo yuyo.png" alt="logo la marca">
-            <h1 class="header__title">YUYOS PARA EL MATE</h1>
+        <div  class="header__container">
+            <img class="rotate-scale-up-ver header__img" src="../imagenes/logo yuyo.png" alt="logo la marca">
+            <h1 class=" header__title">YUYOS PARA EL MATE</h1>
             <p class="header__text">
               Trabajamos exclusivamente con
               producción propia. Cosechamos de
@@ -61,7 +66,7 @@
             <h2 class="main__section--title">Vive la experiencia de un rico mate</h2>
             <div class="main__section--container">
                 <div class="main__section--child">
-                    <img src="../imagenes/yerba-mate1.webp" alt="">
+                    <img class="child__img" src="../imagenes/yerba-mate1.webp" alt="">
                     <h3 class="child__title">SABOR</h3>
                 </div>
                 <div class="main__section--child">
@@ -142,22 +147,22 @@
   <h2 class="productos-title text-center section__title mt-5 ">PRODUCTOS</h2>
   <div class="container container-card">
     <div class="row justify-content-center align-items-center min-vh-50">
-        <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-body d-flex flex-column align-items-center">
-                      <img src="imagenes/energia.webp" class="card-img-top" alt="..." />
-                      <h5 class="card-title text-center">ENERGIA</h5>
-                      <p class="card-text text-center text-center">
-                        Poleo, eucalipto, cola de caballo, menta, rosas, naranjo...
-                      </p>
-                    </div>
-                  </div>
-              </button>
-          </div>
+      <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center" >
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tarjeta2">
+            <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img src="imagenes/energia.webp" class="card-img-top" alt="..." />
+                  <h5 class="card-title text-center">ENERGIA</h5>
+                  <p class="card-text text-center text-center">
+                     Coco, canela, pasas, y citricos. Ideal para mates dulces y... 
+                  </p>
+                </div>
+              </div>
+          </button>
+      </div>
 
           <!-- tarjeta dos -->
-          <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
+          <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center" >
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tarjeta2">
                 <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="card-body d-flex flex-column align-items-center">
@@ -295,17 +300,17 @@
           </div>
           <div class="box">
               <h2>Politicas</h2>
-              <a href="paginas/contacto.html">Contacto</a>
-              <a href="paginas/locales.html">Local</a>
-              <a href="paginas/ayuda.html">Ayuda</a>
-              <a href="paginas/como-comprar.html">Como comprar</a>
+              <a class="name__enlace" href="paginas/contacto.html">Contacto</a>
+              <a class="name__enlace" href="paginas/locales.html">Local</a>
+              <a class="name__enlace" href="paginas/ayuda.html">Ayuda</a>
+              <a class="name__enlace" href="paginas/como-comprar.html">Como comprar</a>
           </div>
           <div class="box">
               <h2>Siguenos</h2>
               <div class="red-social">
-                  <a href="https://www.facebook.com/profile.php?id=61556530991657" class="fa fa-facebook"></a>
-                  <a href="https://www.instagram.com/amatear_2024/?next=%2F" class="fa fa-instagram"></a>
-                  <a href="https://wa.me/543794133213" class="fa fa-whatsapp"></a>
+                  <a href="https://www.facebook.com/profile.php?id=61556530991657" class="icon-style fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/amatear_2024/?next=%2F" class="icon-style fa fa-instagram"></a>
+                  <a href="https://wa.me/543794133213" class="icon-style fa fa-whatsapp"></a>
                   <a href="#"></a>
               </div>
           </div>
