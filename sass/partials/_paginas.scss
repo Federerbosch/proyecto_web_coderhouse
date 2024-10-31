@@ -1,0 +1,200 @@
+/*REGLAS GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: $geologica;
+    box-sizing: border-box;
+    color: $negro;
+    background-color: $blanco;
+    font-size: 10px;
+}
+
+/*-------Pagina de contacto-----*/
+
+/* body*/
+.main__contacto{
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-image: url("../imagenes/pasiaje_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .form{
+        color: $blanco;
+        background-color: $verde_intermedio;
+        padding: 20px 0;
+        max-width: 700px;
+        min-width: 400px;
+        max-height: 800px;
+        margin: auto;
+        box-shadow: 0 0 40px #000;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border-radius: 8px;
+        opacity: 0.7;
+        .form__logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .logo--style{
+                margin: 0;
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                clip-path: circle(45%);
+                margin-bottom: 20px;
+            }
+        }
+        .form__title{
+            color: $blanco;
+            text-align: center;
+            margin: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.6em;
+            padding: 10px;
+            font-family: $geologica;
+        }
+        .form_input--dimension{
+            padding: 6px 20px;
+            .label{
+                font-size: 0.9em;
+                line-height: 2;
+                font-family: "Geologica", sans-serif;
+            }
+            .inputs{
+                width: 100%;
+                box-sizing: border-box;
+                padding: 6px 12px;
+                border: none;
+                border: 1px solid #162916;
+                color: black;
+                background-color: #aecaae;
+                &:hover{
+                    border-color: #b9b9b9; /* Cambia el color del borde */
+                    outline: none; /* Quita el borde predeterminado del navegador */
+                }
+            }
+                .textarea{
+                    @extend .inputs;
+                    min-width: 80%;
+                    resize: none; /*desactivar la capacidad de redimensionar*/
+                    min-height: 100px;
+                }
+            }
+        .container__boton{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .boton--style{
+                width: 100px;
+                height: 30px;
+                border-radius: 20px;
+                &:hover{
+                    background-color: $gris;
+                }
+            }
+        }    
+    }
+}
+
+/* --------PAGINA DE AYUDA-------- */
+.ayuda{
+    font-family: $geologica;
+    .title__ayuda{
+        font-family: $geologica;
+        text-decoration: underline;
+    }
+    .preguntas--margen{
+        margin-bottom: 90px;
+    }
+}
+
+/*-----PAGINA LOCALES------- */
+
+.local{
+    background-color: #fef5;
+    font-family: sans-serif;
+    margin: 0;
+    @include flex(column, center, center);
+    font-family: $geologica;
+    .header--local{
+        width: 70%;
+    }
+    .ubicacion{
+        @include flex(row, center,center);
+        width: 70%;
+        flex-wrap:1;
+        gap: 10px;
+        max-width: 1024px;
+        margin: 30px 0;
+        .ubicacion-navbar{
+            border-radius: 8px;
+            padding: 20px;
+            height: 65%;
+            color: #fff;
+            background-color: #ECF39E;
+        }
+        .ubicacion__title{
+            text-wrap: balance;
+            color: $verde_intermedio;
+            font-family: $geologica;
+            font-weight: 600;
+        }
+        .ubicacion__subtitle{
+            font-size: 1.3em;
+            color: $gris;
+            margin-bottom: 8px;
+        }
+        .btn--style{
+            height: 70px;
+            background-color: $verde_intermedio;
+            text-transform: uppercase;
+            font-family: $geologica;
+            font-size: 1.8em;
+            &:hover{
+                background-color: $verde_claro;
+            }
+        }
+    }
+    .mapa{
+        flex-grow: 1;
+        padding: 10px;
+        background-color: #90a955;
+        iframe{
+            width: 100%;
+            height: 500px;
+            max-height: 600px;
+        }
+    }
+    }
+
+    /*PAGINA DE COMO COMPRAR*/
+    .container--list{
+        max-width: 80%;
+        margin: auto;
+        margin-top: 70px;
+        font-size: 1.8em;
+        .guia__title{
+            font-size: 2em;
+            text-transform: uppercase;
+            width: 500;
+            text-decoration:underline 3.5px #90a955;
+            margin-bottom: 10px;
+        }
+        .guia__subtitle{
+            @extend .guia__title;
+            font-size: 1.8em;
+        }
+    }

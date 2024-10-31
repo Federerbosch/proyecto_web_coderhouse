@@ -1,0 +1,120 @@
+/*RESPONSIVE TABLET */
+@media screen and (max-width:800px) {
+    /*INDEX*/
+    .header__container{
+        max-width: 600px;
+        .header__title{
+            font-size: 2em;
+        }
+        .header__text{
+            font-size: 1.2em;
+        }
+    } 
+    .main__section--flex{
+        height: auto;
+        .main__section--title{
+            font-size: 1.5em;
+            margin: 10px 15px;
+            text-align: center;
+        }
+    }
+    .productos-title{
+        font-size: 1.8em;
+    }  
+    /*FOOTER*/
+    .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+        align-content: center;
+        figure{
+            justify-content: space-around;
+            img{
+                border-radius: 50%;
+                width: 150px;
+            }
+        }
+    }
+    }
+
+
+    /* Pagina responsive para celular */
+@media (max-width:500px){
+    /*INDEX*/
+    .header{
+        .header__container{
+            .header__title{
+                font-size: 3em;
+            }
+            .header__text{
+                font-size: 1.5em;
+            }
+        }
+    }
+    
+    .main__section--flex{
+        height: auto;
+        box-sizing: border-box;
+        .main__section--title{
+            font-size: 2em;
+            margin: 10px 15px;
+            text-align: center;
+        }
+    }
+    .secondary__section{
+        height: auto;
+        .secondary__section--title{
+            font-size: 2em;
+            padding: 10px;
+        }
+        .secondary__section--text{
+            font-size: 1.5em;
+        }
+    }
+    .productos-title{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .container--ocultar{
+        display: none;
+    }
+    .cards__items {
+        img{
+            max-width: 200px;
+        }
+    }
+    /*FIN DE INDEX*/
+
+    /* PAGINA DE CONTACTO */
+    .main__contacto{
+        .form{
+            min-width: 300px;
+            border: 1px solid;
+            .form_input--dimension{
+                .label{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+    /*PAGINA DE LOCALES*/
+    .local{
+        
+        .ubicacion{
+            @include flex(column, center,center);
+            .mapa{
+                iframe{
+                    height: 350px;
+                }
+            }
+        }
+    }
+    /*FOOTER*/
+    .pie-pagina{
+        .grupo-1{
+            @include flex(column, stretch, stretch);
+            width: 90%;
+        }
+    }
+}

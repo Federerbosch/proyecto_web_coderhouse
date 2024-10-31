@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../estilos/style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
     <script src="https://kit.fontawesome.com/ce55077fee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body class="local">
 
     <!--Barra de navegacion-->
-    <div class="container-fluid">
+    <div class="container-nav container-fluid">
       <nav class="navbar navbar-expand-lg border-body fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="name-logo navbar-brand" href="../index.html">Amatear</a>
@@ -29,7 +30,7 @@
                 <a class="name-link nav-link" href="contacto.html">Contacto</a>
               </li>
               <li class="nav-item" data-bs-toggle="tooltip" title="Click para ir a la pagina 2">
-                <a class="name-link nav-link" href="locales.html">local</a>
+                <a class="name-link nav-link" href="locales.html">Local</a>
               </li>
               <li class="nav-item" data-bs-toggle="tooltip" title="Click para ir a la pagina 3">
                 <a class="name-link nav-link" href="ayuda.html">Ayuda</a>
@@ -59,11 +60,11 @@
               <button class="btn--style btn btn-success btn-lg mb-2" onclick="updateMap('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.411641426661!2d-58.80199162366918!3d-27.487570717469588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456ba72641b625%3A0x164df78d70157dfc!2sMedrano%20%26%20Avenida%20Regimiento%20Cazadores%20Correntinos%2C%20W3400%20Corrientes!5e0!3m2!1ses-419!2sar!4v1727403205550!5m2!1ses-419!2sar')">Medrano y Cazadores</button>    
             </div>
         </aside>
-    <!-- Mapa de Google Maps -->
-    <main class="mapa">
-        <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0135965807565!2d144.9631!3d-37.8141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xa4f527ba0e1f4b0!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1638460514169!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-    </main>
-    </div>
+      <!-- Mapa de Google Maps -->
+      <main class="mapa">
+          <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0135965807565!2d144.9631!3d-37.8141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xa4f527ba0e1f4b0!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1638460514169!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </main>
+      </div>
     
     <!-- FOOTER DE PAGINA -->
     <footer class="pie-pagina">
@@ -77,17 +78,17 @@
           </div>
           <div class="box">
               <h2>Politicas</h2>
-              <a href="contacto.html">Contacto</a>
-              <a href="locales.html">Local</a>
-              <a href="ayuda.html">Ayuda</a>
-              <a href="como-comprar.html">Como comprar</a>
+              <a class="name__enlace" href="contacto.html">Contacto</a>
+              <a class="name__enlace" href="locales.html">Local</a>
+              <a class="name__enlace" href="ayuda.html">Ayuda</a>
+              <a class="name__enlace" href="como-comprar.html">Como comprar</a>
           </div>
           <div class="box">
               <h2>Siguenos</h2>
               <div class="red-social">
-                  <a href="https://www.facebook.com/profile.php?id=61556530991657" class="fa fa-facebook"></a>
-                  <a href="https://www.instagram.com/amatear_2024/?next=%2F" class="fa fa-instagram"></a>
-                  <a href="https://wa.me/543794133213" class="fa fa-whatsapp"></a>
+                  <a href="https://www.facebook.com/profile.php?id=61556530991657" class="icon-style fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/amatear_2024/?next=%2F" class="icon-style fa fa-instagram"></a>
+                  <a href="https://wa.me/543794133213" class="icon-style fa fa-whatsapp"></a>
                   <a href="#"></a>
               </div>
           </div>

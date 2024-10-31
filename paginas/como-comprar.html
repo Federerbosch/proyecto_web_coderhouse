@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../estilos/style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ce55077fee.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+  </head>
 <body>
     
     <!--Barra de navegacion-->
-    <div class="container-fluid">
+    <div class="container-nav container-fluid">
       <nav class="navbar navbar-expand-lg border-body fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="name-logo navbar-brand" href="../index.html">Amatear</a>
@@ -42,23 +43,50 @@
       </nav>
     </div>
     <!-- Contenido Principal -->
-    
-    <div class="container d-flex m-0 align-items-center "style="height: 100vh;">
-        <div class="row">
-            <div class="col-12 col-md-4"></div>
-                <h1 class="guia__title">Guia de compra:</h1>
-            
-            <div class="col-12 col-md-12">
-                <ul class="list-group list-group-flush fs-3" >
-                    <li class="list-group-item mb-2"><strong>1-</strong>Arma tu pedido escrito en papel o en un mensaje de texto.</li>
-                    <li class="list-group-item"><strong>2-</strong>Consultar nuestra agenda para saber el tiempo de despacho.</li>
-                    <li class="list-group-item"><strong>3-</strong>Realiza el pago a traves de transferencia o deposito.</li>
-                    <li class="list-group-item"><strong>4-</strong>Despachamos a traves de Correo Argentino!!</li>
-                </ul>    
-            </div>
-        </div>
+    <div class="container--list">
+      <h1 class="guia__title">Guia de compra:</h1>
+      <ul>
+        <li class="list-items">Elegí el producto, selecciona la<strong>CANTIDAD</strong>  y hacé click en AGREGAR AL CARRITO.  Si no te permite la opción y en su lugar dice <strong>SIN STOCK</strong>, podes consultar disponibilidad por whatsapp al +549 3794-4435-2272 o por e-mail a federerbosch@gmail.com</li>
+        <li class="list-items">Puedes seguir agregando otros productos o presionar en <strong>VER CARRITO</strong></li>
+        <li class="list-items">Completa tu código postal y presiona <strong>CALCULAR</strong></li>
+        <li class="list-items">Seleccioná el método de envío: 
+          <ul>
+            <li class="list-items"><strong>ENVIO A DOMICILIO MOTO</strong>solo para CORRIENTES o <strong>CORREO ARGENTINO</strong> para todo el país.
+            </li>
+            <li class="list-items"><strong>RETIRO POR PUNTO DE ENTREGA.</strong>
+              <ul>
+                <li class="list-items">NUESTRO LOCAL - LAS ROXY <br>
+                  Jujuy 2024, Corrientes, Corrientes <br>
+                  Horarios: de Lunes a Sábados de 10 a 20 hs.
+                </li>
+              </ul>
+            </li>
+            <li class="list-items"><strong>RETIRO EN SUCURSALES DE CORREO ARGENTINO.</strong></li>
+          </ul>
+        </li>
+        <li class="list-items">Confirmá tu carrito de compras haciendo click en <strong>INICIAR COMPRA;</strong> no te olvides de verificar que el PRODUCTO sea el correcto.
+        </li>
+        <li class="list-items">Completa tus <strong>DATOS DE CONTACTO</strong>,DATOS y DOMICILIO DEL DESTINATARIO y DATOS DE FACTURACION y hacer click en CONTINUAR
+        </li>
+        <li class="list-items">Seleccioná el <strong>MEDIO DE PAGO:</strong>
+          <ul>
+            <li class="list-items">Tarjetas de Crédito bancarizadas o incluidas en AHORA 12 (3 cuotas sin interés) </li>
+            <li class="list-items">Rapipago o Pago Fácil </li>
+            <li class="list-items">Transferencia bancaria (esta opción te genera un descuento adicional del 10% sobre el importe de la compra) </li>
+            <li class="list-items">Mercado Pago (Hasta 3 cuotas sin intereses según promociones bancarias)</li>
+            <li class="list-items">Tarjeta de debito hasta 3 cuotas sin interés, utilizando la opción “Pagar a través de <a href="https://www.gocuotas.com/">GOcuotas</a>”</li>
+          </ul>
+        </li>
+        <li class="list-items">Completá con los datos de tu tarjeta en la sección de pago (100% seguro).</li>
+        <li class="list-items">Podes agregar cualquier dato adicional sobre la entrega del pedido en <strong>NOTAS DE PEDIDO</strong></li>
+        <li class="list-items">Finaliza tu compra haciendo click en <strong>REALIZAR PEDIDO</strong></li>
+        <li class="list-items">Al finalizar, recibirás tu número de <strong>ORDEN</strong> por e-mail para poder ver el estado de tu pedido (no es comprobante de pago) o ingresá a <strong>“MI CUENTA - MIS COMPRAS”</strong></li>
+      </ul>
+      <h2 class="guia__subtitle">IMPORTANTE!!!</h2>
+      <P>Una vez acreditado el pago, procederemos al empaque y despacho de los productos que hayas comprado.</P>
+      <P>Los plazos de empaque y despacho no consideran feriados ni fines de semana; el tiempo estimado del mismo puede ser de 1 a 5 días hábiles posteriores a la acreditación del pago; a este plazo deberás adicionar los tiempos de entrega estimados según el medio de envío elegido al efectuar la compra</P>
+      <P><strong>En fechas especiales, como por ejemplo HOT DAYS, promo 3x2 y otras los plazos de despacho pueden ser superiores y llegar al doble.</strong></P>
     </div>
-     
     
     <!-- FOOTER DE PAGINA -->
     <footer class="pie-pagina">
@@ -72,17 +100,17 @@
           </div>
           <div class="box">
               <h2>Politicas</h2>
-              <a href="contacto.html">Contacto</a>
-              <a href="locales.html">Local</a>
-              <a href="ayuda.html">Ayuda</a>
-              <a href="como-comprar.html">Como comprar</a>
+              <a class="name__enlace" href="contacto.html">Contacto</a>
+              <a class="name__enlace" href="locales.html">Local</a>
+              <a class="name__enlace" href="ayuda.html">Ayuda</a>
+              <a class="name__enlace" href="como-comprar.html">Como comprar</a>
           </div>
           <div class="box">
               <h2>Siguenos</h2>
               <div class="red-social">
-                  <a href="https://www.facebook.com/profile.php?id=61556530991657" class="fa fa-facebook"></a>
-                  <a href="https://www.instagram.com/amatear_2024/?next=%2F" class="fa fa-instagram"></a>
-                  <a href="https://wa.me/543794133213" class="fa fa-whatsapp"></a>
+                  <a href="https://www.facebook.com/profile.php?id=61556530991657" class="icon-style fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/amatear_2024/?next=%2F" class="icon-style fa fa-instagram"></a>
+                  <a href="https://wa.me/543794133213" class="icon-style fa fa-whatsapp"></a>
                   <a href="#"></a>
               </div>
           </div>
