@@ -131,6 +131,12 @@ body{
     font-family: $geologica;
     .header--local{
         width: 70%;
+        margin: 20px 0;
+        .header--imagen{
+            width: 100%;
+            max-height: 35vh;
+            margin-top: 60px;
+        }
     }
     .ubicacion{
         @include flex(row, center,center);
@@ -138,18 +144,20 @@ body{
         flex-wrap:1;
         gap: 10px;
         max-width: 1024px;
-        margin: 30px 0;
+        margin-bottom: 20px;
         .ubicacion-navbar{
             border-radius: 8px;
             padding: 20px;
             height: 65%;
             color: #111;
             background-color: #ECF39E;
+            width: 25%;
         }
         .ubicacion__title{
             text-wrap: balance;
             color: $verde_intermedio;
             font-family: $geologica;
+            font-size: 2rem;
             font-weight: 600;
         }
         .ubicacion__subtitle{
@@ -158,11 +166,11 @@ body{
             margin-bottom: 8px;
         }
         .btn--style{
-            height: 70px;
+            height: 60px;
             background-color: $verde_intermedio;
             text-transform: uppercase;
             font-family: $geologica;
-            font-size: 1.8em;
+            font-size: 1.5em;
             &:hover{
                 background-color: $verde_claro;
             }
@@ -180,21 +188,132 @@ body{
     }
     }
 
-    /*PAGINA DE COMO COMPRAR*/
-    .container--list{
-        max-width: 80%;
-        margin: auto;
-        margin-top: 70px;
-        font-size: 1.8em;
-        .guia__title{
-            font-size: 2em;
-            text-transform: uppercase;
-            width: 500;
-            text-decoration:underline 3.5px #90a955;
-            margin-bottom: 10px;
-        }
-        .guia__subtitle{
-            @extend .guia__title;
-            font-size: 1.8em;
+    /*PAGINA CHECKOUT*/
+    .header--carrito{
+       background-color: #90a955;
+       margin: 70px;
+       border-radius: 5px;
+       text-align: center;
+        .header-img{
+            width: 20%;
+
         }
     }
+
+
+    .main{
+        margin: 50px;
+        .section{
+            padding: 10px;
+            font-size: 1.2rem;
+            .tabla {
+                width: 60%;
+                margin: 0 auto;
+                margin-bottom: 80px;
+                .tbody{
+                    background-color: #fff;
+                    .fila-encabezado{
+                        padding: 10px;
+                        .button-eliminar{
+                           padding: 5px 15px;
+                           background-color: #90a955;
+                        }
+                        .celda{
+                            padding: 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+                .thead{
+                    background-color: #90a955;
+                    .fila-encabezado{
+                        padding: 10px;
+                        .celda{
+                            padding: 10px;
+                            text-align: left;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .button-quitar{
+        padding: 3px 15px;
+        border-radius: 5px;
+        border: 1px solid #162916;
+        background-color: #ECF39E;
+        color: #111;
+        text-transform: lowercase;
+        font-size: 1rem;
+        &:hover{
+            background-color: #b9b9b9;
+        }
+    }
+    td #tablehead{
+        background-color: #fff;
+    }
+
+    .centrar-div{
+        text-align: center  ;
+    }
+
+    .button{
+        padding: 10px 25px;
+        border-radius: 5px;
+        border: none;
+        border: 2px solid #90a955;
+        background-color: #aecaae;
+        color: #111;
+        text-transform: uppercase;
+        &:hover{
+            background-color: #b9b9b9;
+        }
+    }
+
+    //card dinamicas JS
+
+    .container {
+        gap: 50px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+    }
+    
+    .card {
+        box-shadow: 5px 20px 20px rgba(211, 211, 211, 0.3);
+        border: 2px solid #90a955;
+        border-radius: 8px;
+        height: 230px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card-name{
+            font-size: 1.2rem;
+        }
+        .card-imagen{
+            .imagen-yuyo{
+                border-radius: 5px;
+            }
+        }
+        .card-price{
+            font-size: 0.8rem;
+        }
+    }
+
+    .imagen-yuyo{
+        border-radius: 5px;
+        margin: 5px 0;
+    }
+    
+    
+    
+
+    
+
+    

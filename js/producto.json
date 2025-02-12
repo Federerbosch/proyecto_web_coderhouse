@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "imagen": "../imagenes/img-mini/alimonadoYcedron-64.jpg",
+      "nombre"  : "Alimonado",
+      "precio": "$2000"
+    },
+    {
+      "id": 2,
+      "imagen": "../imagenes/img-mini/dulce-64.jpg",
+      "nombre": "Dulce",
+      "precio": "$2200"
+    },
+    {
+      "id": 3,
+      "imagen": "../imagenes/img-mini/energia-64.jpg",
+      "nombre": "Energia",
+      "precio": "$2000"
+    },
+    {
+      "id": 4,
+      "imagen": "../imagenes/img-mini/mentaYcocu-64.jpg",
+      "nombre": "Verde",
+      "precio": "$2400"
+    },
+    {
+      "id": 5,
+      "imagen": "../imagenes/img-mini/narancanela-64.jpg",
+      "nombre": "Narancanela",
+      "precio": "$2300"
+    },
+    {
+      "id": 6,
+      "imagen": "../imagenes/img-mini/supremo-64.jpg",
+      "nombre": "Supremo",
+      "precio": "$2500"
+    }
+  ]

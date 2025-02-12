@@ -15,9 +15,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css nuevo -->
     <link rel="stylesheet" href="estilos/estilos.css">
+    <script defer src="js/index.js"></script>
+    <script src="js/carrito.js"></script>
+
 </head>
 <body>
-  
+    <img src="" alt="">
     <!--Barra de navegacion-->
     <div class="container-nav container-fluid">
         <nav class="navbar navbar-expand-lg border-body fixed-top" data-bs-theme="dark">
@@ -42,7 +45,7 @@
                   <a class="name-link nav-link" href="paginas/ayuda.html">Ayuda</a>
                 </li>
                 <li class="nav-item" data-bs-toggle="tooltip" title="Click para ir a la pagina 4">
-                  <a class="name-link nav-link" href="paginas/ayuda.html">Como comprar</a>
+                  <a class="name-link nav-link" href="paginas/checkout.html">Carrito</a>
                 </li>
               </ul>
             </div>
@@ -86,7 +89,6 @@
         <section class="secondary__section">
             <h2 class="secondary__section--title">NUESTRA HISTORIA</h2>
             <p class="secondary__section--text">Inspirada en un emblema nacional, una costumbre antigua que incita a la amistad, con el conocimiento de nuestros antepasados, de nuestras abuelas y con el más sincero deseo de llevar bienestrar, satisfacción, alegría, calma, salud y amor en un ritual cotidiano: el mate.<br>
-
              Amatear surge a partir del gusto personal de alguien que recolecta, deseca, y almacena hierbas de todo tipo, flores y frutas, y que ama profundamente el mate con yuyito.
              <br> 
              Ojalá un poco de ese amor llegue con ustedes en las más exquisitas mezclas de hierbas medicinales y aromáticas.
@@ -97,199 +99,24 @@
         
 
   
-    <!-- Modal card1 -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">ENERGIA</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Mezcla de plantas medicinales para mete compuesta por Poleo, eucalipto, cola de caballo, menta, rosas, naranjo. Sabor herbal fuerte y mentolado, propiedades antiinflamatorias, contra el envejecimiento de la piel, diuretica, descongestiva.</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal card 2 -->
-  <div class="modal fade" id="tarjeta2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">DULCE</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Topping, mezcla de especias y frutas para mate compuesta por coco, canela, pasas, y citricos. Se recomienda para mate dulce o mate de leche, es antioxidante, digestivo y un excelente detox.</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal card 3 -->
-  <div class="modal fade" id="supremo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title fs-5" id="exampleModalLabel">SUPREMO</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Topping mezcla de plantas medicinales para mate, compuesta por aniz estrellado, manzanilla, hibiscus, anis en grano, naranja, isipo mil hombres, cedron, marcela, burrito, lemon grass, boldo, siempre vive.</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+   
+  <img src="" alt="">
 
   <!-- section cards -->
    <!-- tarjeta uno -->
-  <h2 class="productos-title text-center section__title mt-5 ">PRODUCTOS</h2>
-  <div class="container container-card">
-    <div class="row justify-content-center align-items-center min-vh-50">
-      <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center" >
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tarjeta2">
-            <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <div class="card-body d-flex flex-column align-items-center">
-                  <img src="imagenes/energia.jpg" class="card-img-top" alt="..." />
-                  <h3 class="card-title text-center">ENERGIA</h3>
-                  <p class="card-text text-center text-center">
-                     Coco, canela, pasas, y citricos. Ideal para mates dulces y... 
-                  </p>
-                </div>
-              </div>
-          </button>
-      </div>
-
-          <!-- tarjeta dos -->
+  <section class="vh-100">
+    <h2 class="productos-title text-center section__title mt-5 ">PRODUCTOS</h2>
+    <div class="container container-card">
+      <div class="contenedor">
+        <div class="row justify-content-center align-items-center min-vh-50">
           <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center" >
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tarjeta2">
-                <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-body d-flex flex-column align-items-center">
-                      <img src="imagenes/dulce.jpg" class="card-img-top" alt="..." />
-                      <h3 class="card-title text-center">DULCE</h3>
-                      <p class="card-text text-center text-center">
-                         Coco, canela, pasas, y citricos. Ideal para mates dulces y... 
-                      </p>
-                    </div>
-                  </div>
-              </button>
-          </div>
-          <!-- tarjeta 3 -->
-          <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#supremo">
-                <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-body d-flex flex-column align-items-center">
-                      <img src="imagenes/supremo.jpg" class="card-img-top" alt="..." />
-                      <h3 class="card-title text-center">SUPREMO</h3>
-                      <p class="card-text text-center text-center">
-                        Aniz estrellado, manzanilla, hibiscus, anis en grano...
-                      </p>
-                    </div>
-                  </div>
-              </button>
+               
           </div>
         </div>
-    </div>
-
-    <!-- SEGUNDA FILA DE MODAL-->
-  <div class="modal fade" id="narancanela" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title fs-5" id="exampleModalLabel">NARANCANELA</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Mezcla de plantas medicinales para mate o infusion compuesta por naranja, canela, cocao, cardamomo, jengibre, cafe y anis estrellado. Se recomienda agregar directamente al mate junto con la yerba. Aporta propiedades antioxidante, digestiva, mejora el aliento ayuda a regular el colesterol. Predomina el sabor dulce citrico, con notas especiadas</p>
-        </div>
-        </div>
-      </div>
     </div>
   </div>
-  <!-- modal card 5 -->
-  <div class="modal fade" id="alimonado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title fs-5" id="exampleModalLabel">ALIMONADO</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Mezcla de plantas medicinales para terere o mate compuesta por menta, cedron, jengibre y citricos. Se recomienda agregar directamente al mate junto con la yerba. Aporta propiedades digestivas, carminativas y atisepticas. Predomina el sabor suave mentolado, herbal, alimonado. utiliza en infusion, en el mate, para un coctel, o en el terere</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal card 6 -->
-  <div class="modal fade" id="verde" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title fs-5" id="exampleModalLabel">VERDE</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Topping mezcla de plantas medicinales para terere o mate compuesta por cocú, menta, salvia, té verde, pimienta rosa. Aporta propiedades antioxidante, digestivas, refrescantes. Predomina el sabor herbal suave, con notas frutales.</p>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- SEGUNDA FILA DE CARDS -->
-  <div class="container container--ocultar">
-    <div class="row justify-content-center align-items-center min-vh-50">
-        <!-- tarjeta cuatro -->
-        <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#narancanela">
-                <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-body d-flex flex-column align-items-center">
-                      <img src="imagenes/narancanela.jpg" class="card-img-top" alt="..." />
-                      <h3 class="card-title text-center">NARANCANELA</h3>
-                      <p class="card-text text-center text-center">
-                        Naranja, canela, cocao, cardamomo, jengibre, cafe...
-                      </p>
-                    </div>
-                  </div>
-              </button>
-          </div>
+  </section>
 
-          <!-- tarjeta cinco -->
-          <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#alimonado">
-                <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-body d-flex flex-column align-items-center">
-                      <img src="imagenes/alimonadoYcedron.jpg" class="card-img-top" alt="..." />
-                      <h3 class="card-title text-center">ALIMONADO</h3>
-                      <p class="card-text text-center text-center">
-                        Menta, cedron, jengibre y citricos, mentolado, herbal...
-                      </p>
-                    </div>
-                  </div>
-              </button>
-          </div>
-          <!-- tarjeta seis-->
-          <div class=" col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#verde">
-                <div class="card cards__items border-0 text-black bg-white" data-bs-toggle="tooltip" title="Click para ir a la Card 1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-body d-flex flex-column align-items-center">
-                      <img src="imagenes/mentaYcocu.jpg" class="card-img-top" alt="..." />
-                      <h3 class="card-title text-center">VERDE</h3>
-                      <p class="card-text text-center text-center">
-                        Cocú, menta, salvia, té verde, pimienta rosa, antioxidantes...
-                      </p>
-                    </div>
-                  </div>
-              </button>
-          </div>
-        </div>
-    </div>
-
-       
     <!-- FOOTER DE PAGINA -->
     <footer class="pie-pagina">
       <div class="grupo-1">
